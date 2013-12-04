@@ -4,6 +4,16 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>BuildAll.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>Child.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>ShareMem.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -13,6 +23,16 @@
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>680F80F1183F7693006780D8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>680F8101183F76BC006780D8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6831AEE918446F2D004FD4C2</key>
 		<dict>
 			<key>primary</key>
 			<true/>

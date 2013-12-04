@@ -6,10 +6,42 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		6831AEE918446F2D004FD4C2 /* BuildAll */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 6831AEEC18446F2D004FD4C2 /* Build configuration list for PBXAggregateTarget "BuildAll" */;
+			buildPhases = (
+			);
+			dependencies = (
+				6831AEF018446F3B004FD4C2 /* PBXTargetDependency */,
+				6831AEEE18446F37004FD4C2 /* PBXTargetDependency */,
+			);
+			name = BuildAll;
+			productName = BuildAll;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		680F80F6183F7693006780D8 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 680F80F5183F7693006780D8 /* main.c */; };
-		680F80F8183F7693006780D8 /* ShareMem.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 680F80F7183F7693006780D8 /* ShareMem.1 */; };
+		680F8105183F76BC006780D8 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 680F8104183F76BC006780D8 /* main.c */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6831AEED18446F37004FD4C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 680F80EA183F7693006780D8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 680F80F1183F7693006780D8;
+			remoteInfo = ShareMem;
+		};
+		6831AEEF18446F3B004FD4C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 680F80EA183F7693006780D8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 680F8101183F76BC006780D8;
+			remoteInfo = Child;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		680F80F0183F7693006780D8 /* CopyFiles */ = {
@@ -18,7 +50,15 @@
 			dstPath = /usr/share/man/man1/;
 			dstSubfolderSpec = 0;
 			files = (
-				680F80F8183F7693006780D8 /* ShareMem.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		680F8100183F76BC006780D8 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
@@ -27,11 +67,20 @@
 /* Begin PBXFileReference section */
 		680F80F2183F7693006780D8 /* ShareMem */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ShareMem; sourceTree = BUILT_PRODUCTS_DIR; };
 		680F80F5183F7693006780D8 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
-		680F80F7183F7693006780D8 /* ShareMem.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = ShareMem.1; sourceTree = "<group>"; };
+		680F8102183F76BC006780D8 /* Child */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Child; sourceTree = BUILT_PRODUCTS_DIR; };
+		680F8104183F76BC006780D8 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		680F810D183F77E1006780D8 /* Public.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Public.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		680F80EF183F7693006780D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		680F80FF183F76BC006780D8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -44,7 +93,9 @@
 		680F80E9183F7693006780D8 = {
 			isa = PBXGroup;
 			children = (
+				680F810D183F77E1006780D8 /* Public.h */,
 				680F80F4183F7693006780D8 /* ShareMem */,
+				680F8103183F76BC006780D8 /* Child */,
 				680F80F3183F7693006780D8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				680F80F2183F7693006780D8 /* ShareMem */,
+				680F8102183F76BC006780D8 /* Child */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -61,9 +113,16 @@
 			isa = PBXGroup;
 			children = (
 				680F80F5183F7693006780D8 /* main.c */,
-				680F80F7183F7693006780D8 /* ShareMem.1 */,
 			);
 			path = ShareMem;
+			sourceTree = "<group>";
+		};
+		680F8103183F76BC006780D8 /* Child */ = {
+			isa = PBXGroup;
+			children = (
+				680F8104183F76BC006780D8 /* main.c */,
+			);
+			path = Child;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,6 +145,23 @@
 			productReference = 680F80F2183F7693006780D8 /* ShareMem */;
 			productType = "com.apple.product-type.tool";
 		};
+		680F8101183F76BC006780D8 /* Child */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 680F8108183F76BC006780D8 /* Build configuration list for PBXNativeTarget "Child" */;
+			buildPhases = (
+				680F80FE183F76BC006780D8 /* Sources */,
+				680F80FF183F76BC006780D8 /* Frameworks */,
+				680F8100183F76BC006780D8 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Child;
+			productName = Child;
+			productReference = 680F8102183F76BC006780D8 /* Child */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -93,7 +169,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0500;
-				ORGANIZATIONNAME = "Wei Han";
+				ORGANIZATIONNAME = "Will Han";
 			};
 			buildConfigurationList = 680F80ED183F7693006780D8 /* Build configuration list for PBXProject "ShareMem" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -107,7 +183,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				680F8101183F76BC006780D8 /* Child */,
 				680F80F1183F7693006780D8 /* ShareMem */,
+				6831AEE918446F2D004FD4C2 /* BuildAll */,
 			);
 		};
 /* End PBXProject section */
@@ -121,7 +199,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		680F80FE183F76BC006780D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				680F8105183F76BC006780D8 /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6831AEEE18446F37004FD4C2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 680F80F1183F7693006780D8 /* ShareMem */;
+			targetProxy = 6831AEED18446F37004FD4C2 /* PBXContainerItemProxy */;
+		};
+		6831AEF018446F3B004FD4C2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 680F8101183F76BC006780D8 /* Child */;
+			targetProxy = 6831AEEF18446F3B004FD4C2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		680F80F9183F7693006780D8 /* Debug */ = {
@@ -195,11 +294,45 @@
 		680F80FC183F7693006780D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
 		680F80FD183F7693006780D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		680F8109183F76BC006780D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		680F810A183F76BC006780D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		6831AEEA18446F2D004FD4C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6831AEEB18446F2D004FD4C2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -225,6 +358,25 @@
 				680F80FD183F7693006780D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		680F8108183F76BC006780D8 /* Build configuration list for PBXNativeTarget "Child" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				680F8109183F76BC006780D8 /* Debug */,
+				680F810A183F76BC006780D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6831AEEC18446F2D004FD4C2 /* Build configuration list for PBXAggregateTarget "BuildAll" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6831AEEA18446F2D004FD4C2 /* Debug */,
+				6831AEEB18446F2D004FD4C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
